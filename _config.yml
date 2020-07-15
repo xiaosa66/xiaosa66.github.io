@@ -1,10 +1,10 @@
 # Site settings
 title: Xiaosa's Blog
-SEOTitle: 刘潇洒的博客 | Xiaosa's Blog
+SEOTitle: 梧正的博客 | Xiaosa's Blog
 header-img: img/home-bg.jpg
 email: xiao.sa@icloud.com
 description: "易求无价宝,难得少年心."
-keyword: "刘潇洒, Xiaosa, Liu Xiaosa, xiaosa liu, 互联网, Web, JavaScript, 前端"
+keyword: "梧正, Xiaosa, Liu Xiaosa, xiaosa liu, 互联网, Web, JavaScript, 前端"
 url: "https://xiaosa66.github.io"              # your host, for absolute URL
 baseurl: ""                             # for example, '/blog' if your blog hosted on 'host/blog'
 
