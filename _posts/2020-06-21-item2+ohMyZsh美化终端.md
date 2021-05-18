@@ -38,6 +38,32 @@ brew cask install iterm2
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 ```
 
+如果访问较慢 可：
+
+```shell
+
+wget https://gitee.com/mirrors/oh-my-zsh/raw/master/tools/install.sh
+chmod +x install.sh
+
+# 替换 install.sh 中以下内容
+
+ZSH=${ZSH:-~/.oh-my-zsh}
+REPO=${REPO:-ohmyzsh/ohmyzsh}
+REMOTE=${REMOTE:-https://github.com/${REPO}.git}
+BRANCH=${BRANCH:-master}
+
+#为
+REPO=${REPO:-mirrors/oh-my-zsh}
+REMOTE=${REMOTE:-https://gitee.com/${REPO}.git}
+
+#后  执行 
+
+./install.sh
+
+```
+
+
+
 ### 安装美化工具
 
 ```shell
