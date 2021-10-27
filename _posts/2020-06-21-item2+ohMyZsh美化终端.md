@@ -94,8 +94,24 @@ pip install powerline-status --user
 
 #### 删除全部
 
-    :dG
+    dG
 
+
+
+--------------
+````shell
+alias code="/Applications/Visual\ Studio\ Code.app/Contents/Resources/app/bin/code"
+# 端口取决于你自己的代理服务端口
+alias proxy='export all_proxy=socks5://127.0.0.1:1080'
+# 查看当前请求ip地址
+alias whereAmI='curl cip.cc'
+# 禁止chromecors策略
+alias noCorsChrome='open -a Google\ Chrome --args --disable-web-security --user-data-dir=/Users/didi'
+alias unproxy='unset all_proxy'
+alias ggm='/Users/didi/github/v8/tools/dev/gm.py'
+````
+
+---------------
 #### 粘贴配置文件
 
 ```shell
@@ -212,3 +228,6 @@ source $ZSH/oh-my-zsh.sh
 
 ```
 
+```shell
+source ~/.zshrc
+```
