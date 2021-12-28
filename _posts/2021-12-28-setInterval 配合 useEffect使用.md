@@ -12,3 +12,21 @@ let setIntervalHandler;
     return () => clearInterval(setIntervalHandler);
   }, [readTimeout, setIntervalHandler]);
 ```
+
+or 性能更优解
+
+```js
+  const intervalMemo = useCallback(() => {
+    setIntervalHandler = setInterval(() => {
+      setReadTimeout(x => x - 1);
+      if (readTimeout <= 1) {
+        setIsScrolled(true);
+        clearInterval(setIntervalHandler);
+      }
+    }, 1000);
+  }, []);
+  useEffect(() => {
+    intervalMemo();
+  }, []);
+
+```
