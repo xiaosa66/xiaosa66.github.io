@@ -1,4 +1,5 @@
 ```js
+let setIntervalHandler;
   useEffect(() => {
     setIntervalHandler = setInterval(() => {
       setReadTimeout(readTimeout - 1);
