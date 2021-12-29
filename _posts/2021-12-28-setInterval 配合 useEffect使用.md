@@ -10,23 +10,26 @@ let setIntervalHandler;
       console.log('readTimeout', readTimeout);
     }, 1000);
     return () => clearInterval(setIntervalHandler);
-  }, [readTimeout, setIntervalHandler]);
+  }, [readTimeout]);
 ```
 
 or 性能更优解
 
 ```js
-  const intervalMemo = useCallback(() => {
+  const intervalMemo = () => {
     setIntervalHandler = setInterval(() => {
-      setReadTimeout(x => x - 1);
-      if (readTimeout <= 1) {
-        setIsScrolled(true);
-        clearInterval(setIntervalHandler);
-      }
+      setReadTimeout(readTimeout => {
+        if (readTimeout <= 1) {
+          setIsScrolled(true);
+          clearInterval(setIntervalHandler);
+        }
+        return readTimeout - 1;
+      });
     }, 1000);
-  }, []);
+  };
   useEffect(() => {
     intervalMemo();
   }, []);
+
 
 ```
