@@ -33,3 +33,24 @@ or 性能更优解
 
 
 ```
+
+or 
+
+```js
+
+const [count, setCount] = useState(0);
+
+// 通过 ref 来记忆最新的 count
+const countRef = useRef(count);
+countRef.current = count;
+
+useEffect(() => {
+  const timer = setTimeout(() => {
+    console.log(countRef.current)
+  }, 3000);
+  return () => {
+    clearTimeout(timer);
+  }
+}, [])
+
+```
