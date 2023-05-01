@@ -3,7 +3,7 @@ Hux Blog
 
 ### [View Live Hux Blog &rarr;](https://xiaosa66.github.io)  
 
-![](http://xiaosa66.github.io/img/blog-desktop.jpg)
+![](http://xiaosa66.github.io/img/blog-desktop.webp)
 
 
 Boilerplate (beta)
@@ -188,7 +188,7 @@ title:      "Hello 2015"
 subtitle:   "Hello World, Hello Blog"
 date:       2015-01-29 12:00:00
 author:     "Hux"
-header-img: "img/post-bg-2015.jpg"
+header-img: "img/post-bg-2015.webp"
 tags:
     - Life
 ---
@@ -196,7 +196,7 @@ tags:
 
 ### SideBar
 
-![](http://xiaosa66.github.io/img/blog-sidebar.jpg)
+![](http://xiaosa66.github.io/img/blog-sidebar.webp)
 
 **SideBar** provides possible modules to show off more personal information.
 
@@ -204,7 +204,7 @@ tags:
 # Sidebar settings
 sidebar: true   # default true
 sidebar-about-description: "your description here"
-sidebar-avatar: /img/avatar-hux.jpg     # use absolute URL.
+sidebar-avatar: /img/avatar-hux.webp     # use absolute URL.
 ```
 
 Modules *[Featured Tags](#featured-tags)*, *[Mini About Me](#mini-about-me)* and *[Friends](#friends)* are turned on by default and you can add your own. The sidebar is naturally responsive, i.e. be pushed to bottom in a smaller screen (`<= 992px`, according to [Bootstarp Grid System](http://getbootstrap.com/css/#grid))  
@@ -253,7 +253,7 @@ friends: [
 
 ### Keynote Layout
 
-![](http://xiaosa66.github.io/img/blog-keynote.jpg)
+![](http://xiaosa66.github.io/img/blog-keynote.webp)
 
 There is a increased trend to use Open Web technology for keynotes and presentations via Reveal.js, Impress.js, Slides, Prezi etc. I consider a modern blog should have first-class support to embed these HTML based presentation so **Keynote layout** are made.
 
